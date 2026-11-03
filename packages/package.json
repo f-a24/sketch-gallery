@@ -1,0 +1,33 @@
+{
+  "name": "sketch-gallery",
+  "version": "0.0.0",
+  "description": "Canvas スケッチをストーリー形式で書いて、ギャラリーサイトを作るツール",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./vite": "./src/plugin/index.ts",
+    "./manager": "./src/manager/main.ts",
+    "./preview": "./src/runtime/preview.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "es-module-lexer": "^3.0.4",
+    "picomatch": "^4.0.7",
+    "tinyglobby": "^0.2.17",
+    "tweakpane": "^4.0.5"
+  },
+  "peerDependencies": {
+    "vite": ">=8"
+  },
+  "devDependencies": {
+    "@tweakpane/core": "2",
+    "@types/bun": "^1.4.4",
+    "@types/picomatch": "^4.0.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}

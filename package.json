@@ -1,0 +1,22 @@
+{
+  "name": "sketch-gallery-workspace",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages",
+    "examples"
+  ],
+  "scripts": {
+    "dev": "bun run --filter examples dev",
+    "build": "bun run --filter examples build",
+    "preview": "bun run --filter examples preview",
+    "typecheck": "bun run --filter '*' typecheck",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "bun fmt",
+    "format:check": "bun fmt --check"
+  },
+  "devDependencies": {
+    "oxlint": "^1.90.0"
+  }
+}

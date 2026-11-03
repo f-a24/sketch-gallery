@@ -1,0 +1,4 @@
+# bun fmt の設定（Prettier と同じオプション名）
+[fmt]
+printWidth = 100
+singleQuote = true
